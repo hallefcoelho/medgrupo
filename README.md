@@ -48,7 +48,7 @@ To get more help on the Angular CLI use `ng help` or go check out the [Angular C
 ## 💻 Projeto
 
 
-<!-- <a href="https://hallefcoelho.github.io/digital-menu/#/secure/home">Clique para acessar o projeto</a>-->
+<a href="https://medgrupo.vercel.app/#/secure/home">Clique para acessar o projeto</a>
 
 O objetivo central do projeto é avaliar a habilidade do candidato em implementar um layout com base em um protótipo fornecido.
 
