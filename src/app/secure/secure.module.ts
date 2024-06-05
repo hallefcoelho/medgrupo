@@ -9,8 +9,11 @@ import { HeaderMobileComponent } from './core/header-mobile/header-mobile.compon
 import { FooterMobileComponent } from './core/footer-mobile/footer-mobile.component';
 import { ToDoListModule } from './core/to-do-list/to-do-list.module';
 import { ChangeThemeModule } from './core/_shared/components/change-theme/change-theme.module';
-import { UserInterface } from '../_shared/interface/user.interface';
-import { UserService } from '../_shared/http-services/user.service';
+import { ContentsComponent } from './content/contents.component';
+import { TitleModule } from '../_shared/components/title/title.module';
+import { MentoringComponent } from './mentoring/mentoring.component';
+import { TrainingComponent } from './training/training.component';
+import { MetricsComponent } from './metrics/metrics.component';
 
 
 @NgModule({
@@ -18,6 +21,10 @@ import { UserService } from '../_shared/http-services/user.service';
     SecureComponent,
     HeaderMobileComponent,
     FooterMobileComponent,
+    ContentsComponent,
+    MentoringComponent,
+    TrainingComponent,
+    MetricsComponent,
   ],
   imports: [
     CommonModule,
@@ -25,7 +32,8 @@ import { UserService } from '../_shared/http-services/user.service';
     SidebarModule,
     MaterialModule,
     ToDoListModule,
-    ChangeThemeModule
+    ChangeThemeModule,
+    TitleModule
   ]
 })
 export class SecureModule { }

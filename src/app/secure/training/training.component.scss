@@ -1,0 +1,12 @@
+.container__header {
+  display: flex;
+  align-items: center;
+  margin-top: 50px;
+}
+
+@media (max-width: 800px) {
+  .container__header {
+    margin-top: 50px;
+  }
+}
+
