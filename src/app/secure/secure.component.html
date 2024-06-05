@@ -1,0 +1,20 @@
+<main class="container">
+  <header class="container__header__mobile">
+    <app-header-mobile></app-header-mobile>
+  </header>
+  <aside class="container__sidebar">
+    <app-sidebar></app-sidebar>
+  </aside>
+  <section class="container__others">
+    <div (click)="toggleToDoListHide()">
+      <router-outlet></router-outlet>
+    </div>
+    <app-to-do-list class="container__to-do-list" [class.active]="isToDoListActive"></app-to-do-list>
+  </section>
+  <button class="container__others--toggle-button" [ngClass]="{'expanded': isToDoListActive}" aria-label="Duas setas para direita" (click)="toggleToDoList()">
+    <mat-icon [svgIcon]="themeColor === 'dark' ? 'icon-arrow-right' : 'icon-arrow-right-light'"></mat-icon>
+  </button>
+  <footer class="container__footer__mobile">
+    <app-footer-mobile></app-footer-mobile>
+  </footer>
+</main>

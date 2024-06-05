@@ -1,0 +1,34 @@
+<div class="container">
+  <button mat-button mat-dialog-close class="container__button" (click)="closeModal()">
+    <span>x</span>
+  </button>
+
+  <section class="container__card">
+    <header>
+      <h1 class="container__card__title">Escolha um dos seus produtos</h1>
+    </header>
+
+    <article class="container__card__items" (click)="productSelected('2022 MEDCURSO')">
+      <img [src]="themeColor == 'dark' ? '../../../../../../assets/img/logo-1.png' : '../../../../../../assets/img/logo-1-light.png'" alt="logo produto">
+      <span class="container__card__text">2022 MEDCURSO</span>
+    </article>
+
+    <article class="container__card__items" (click)="productSelected('2022 M.E.D')">
+      <img [src]="themeColor == 'dark' ? '../../../../../../assets/img/logo-2.png' : '../../../../../../assets/img/logo-2-light.png'" alt="logo produto">
+      <span class="container__card__text">2022 M.E.D</span>
+    </article>
+
+    <article class="container__card__items" (click)="productSelected('2022 RACIPE')">
+      <img [src]="themeColor == 'dark' ? '../../../../../../assets/img/logo-3.png' : '../../../../../../assets/img/logo-3-light.png'" alt="logo produto">
+      <span class="container__card__text">2022 RACIPE</span>
+    </article>
+
+    <article class="container__card__items" (click)="productSelected('2021 CPMED')">
+      <img [src]="themeColor == 'dark' ? '../../../../../../assets/img/logo-4.png' : '../../../../../../assets/img/logo-4-light.png'" alt="logo produto">
+      <span class="container__card__text">2021 CPMED</span>
+    </article>
+    <footer class="container__card__footer">
+      <span class="container__card__text">(+5) mostrar todos os produtos</span>
+    </footer>
+  </section>
+</div>

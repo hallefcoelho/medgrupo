@@ -1,0 +1,11 @@
+<header class="container">
+  <figure class="container__image" (click)="openListProduct()">
+    <mat-icon svgIcon="menu" aria-label="Menu com o logo da empresa"></mat-icon>
+    <span>2022 REVALIDAÇÃO</span>
+    <mat-icon class="container__image__icon__arrow" svgIcon="icon-arrow-down" aria-label="Ícone com a seta para baixo"></mat-icon>
+  </figure>
+  <figure class="container__image" (click)="openChangeTheme()">
+    <div [ngClass]="user.notifications ? 'container__image__circle' : 'container__image__circle--hidden'"></div>
+    <img [src]="user.avatar" alt="Foto de perfil">
+  </figure>
+</header>

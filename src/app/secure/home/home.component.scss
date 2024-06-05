@@ -1,0 +1,58 @@
+.container__to-do-list {
+  display: none;
+}
+
+.container__text {
+  font-weight: 600;
+  font-size: 14px;
+  color: var(--med-color-neutral-10);
+  margin-left: 18px;
+  & > span {
+    position: relative;
+    top: 2px;
+    font-weight: 900;
+  }
+  &:hover {
+    cursor: pointer;
+  }
+}
+
+.container__text--week {
+  display: none;
+  font-weight: 600;
+  font-size: 14px;
+  color: var(--med-color-neutral-10);
+  margin-left: 18px;
+  & > span {
+    position: relative;
+    top: 2px;
+    font-weight: 900;
+  }
+  &:hover {
+    cursor: pointer;
+  }
+}
+
+@media (max-width: 800px) {
+  .container__header {
+    margin-top: 60px;
+    background-color: var(--med-color-neutral-alternative-1);
+    padding-bottom: 3px;
+  }
+  .container__to-do-list {
+    display: block;
+    width: 95%;
+  }
+  .container {
+    margin-top: -10px;
+  }.container__text--week {
+    display: block;
+  }
+}
+
+@media (max-width: 400px) {
+  .container__to-do-list {
+    display: block;
+    width: 95%;
+  }
+}

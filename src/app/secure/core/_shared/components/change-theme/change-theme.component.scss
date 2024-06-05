@@ -1,0 +1,107 @@
+.container {
+  background-color: var(--med-color-neutral-1);
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.container__button {
+  margin: 30px;
+  border: none;
+  background: none;
+  width: 5px;
+  background-color: var(--med-color-neutral-1);
+  & span {
+    color: var(--med-color-neutral-10);
+    font-size: 20px;
+    font-weight: bolder;
+    width: 5px;
+  }
+}
+
+.container__card {
+  margin: 0 50px 0 50px;
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+}
+
+.container__card__title {
+  font-size: 32px;
+  font-weight: 600;
+  color: var(--med-color-neutral-10);
+  margin-bottom: 30px;
+  margin-top: 20px;
+}
+
+.container__card__box {
+  display: flex;
+  gap: 10px;
+}
+
+.container__card__box--light,
+.container__card__box--dark {
+  width: 50%;
+  height: 200px;
+  border-radius: 8px;
+  background-color: var(--med-color-neutral-alternative-1);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+  &:hover {
+    cursor: pointer;
+    border: 3px solid var(--med-color-brand-4);
+  }
+}
+
+.active {
+  border: 3px solid var(--med-color-brand-4);
+}
+
+.container__card--icon {
+  width: 40px;
+  height: 40px;
+}
+
+.container__card--desctiption {
+  font-size: 16px;
+  font-weight: 600;
+  color: var(--med-color-neutral-10);
+  text-align: center;
+}
+
+.container__card--buttom {
+  width: 30%;
+  height: 48px;
+  border-radius: 500px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: auto;
+  margin-bottom: 20px;
+  background-color: var(--med-color-neutral-alternative-4);
+  align-self: center;
+  cursor: pointer;
+  & > button {
+    cursor: pointer;
+    background: none;
+    border: none;
+    color: var(--med-color-neutral-alternative-3);
+    padding: 0;
+    margin: 0;
+    font: inherit;
+    font-weight: 600;
+    outline: none;
+  }
+  &:active {
+    border: 3px solid var(--med-color-brand-4);
+  }
+}
+
+@media (max-width: 800px) {
+  .container__card--buttom {
+    width: 100%;
+  }
+}

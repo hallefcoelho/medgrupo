@@ -1,0 +1,138 @@
+.container__card__section {
+  display: flex;
+  overflow-x: auto;
+  overflow-y: hidden;
+  position: relative;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+  width: 100%;
+  cursor: grab;
+  & > div {
+    width: 420px;
+  }
+  :active {
+    cursor: grabbing;
+  }
+}
+
+.container__card__background {
+  width: 449px;
+  height: 328px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container__card__image {
+  width: 100%;
+  height: auto;
+}
+
+.container__card__content {
+  margin-top: -25px;
+  width: 100%;
+
+}
+.container__card__short{
+  position: relative;
+  top: -130px;
+  left: -380px;
+  font-size: 24px;
+  font-weight: 600;
+  color: #F9FAFA;
+}
+
+.container__card__header {
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--med-color-neutral-10);
+  margin-left: 40px;
+}
+
+.container__card__affix {
+  width: 75%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.container__card__affix__icon {
+  width: 20px;
+  height: auto;
+  text-align: start;
+}
+
+.container__card__affix__section {
+  margin-left: 40px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.container__card__affix__header{
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.container__card__affix__text{
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--med-color-neutral-alternative-2);
+  text-transform: capitalize;
+}
+
+.container__card__affix__percent {
+  font-size: 20px;
+  font-weight: 600;
+  color: var(--med-color-neutral-10);
+}
+@media (max-width: 800px) {
+  .container__card__section{
+    width: 100vw;
+    background-color: var(--med-color-neutral-alternative-1);
+  }
+  .container__card__content {
+    margin-bottom: 15px;
+  }
+}
+
+@media (max-width: 500px) {
+  .container__card__image {
+    width: 80%;
+    margin-left: -50px;
+  }
+
+  .container__card__content {
+    margin-top: -35px;
+    margin-left: -5px;
+  }
+
+  .container__card__short {
+    top: -110px;
+    left: -350px;
+  }
+  .container__card__background{
+    margin-right: -110px;
+  }
+}
+
+@media (max-width: 400px) {
+  .container__card__image {
+    width: 75%;
+    margin-left: -100px;
+  }
+
+  .container__card__content {
+    margin-top: -32px;
+    margin-left: -15px;
+  }
+
+  .container__card__short {
+    top: -100px;
+    left: -330px;
+  }
+
+  .container__card__background{
+    margin-right: -150px;
+  }
+}

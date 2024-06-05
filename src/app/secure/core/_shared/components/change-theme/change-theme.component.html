@@ -1,0 +1,24 @@
+<div class="container">
+  <button mat-button mat-dialog-close class="container__button" (click)="closeModal()">
+    <span>x</span>
+  </button>
+
+  <article class="container__card">
+    <header>
+      <h1 class="container__card__title">Modo Claro/Escuro</h1>
+    </header>
+    <div class="container__card__box">
+      <section class="container__card__box--light" [ngClass]="{'active': themeColor === 'dark'}" (click)="changeTheme('dark')">
+        <mat-icon class="container__card--icon" [svgIcon]="themeColor === 'dark' ? 'icon-moon-active' : 'icon-moon'" aria-label="Ícone de uma lua"></mat-icon>
+        <span class="container__card--desctiption">Modo Escuro</span>
+      </section>
+      <section class="container__card__box--light" [ngClass]="{'active': themeColor === 'light'}" (click)="changeTheme('light')">
+        <mat-icon class="container__card--icon" [svgIcon]="themeColor === 'light' ? 'icon-sun-active' : 'icon-sun'" aria-label="Ícone de um sol"></mat-icon>
+        <span class="container__card--desctiption">Modo Claro</span>
+      </section>
+    </div>
+    <footer class="container__card--buttom" (click)="saveColorTheme()">
+      <button>Aplicar</button>
+    </footer>
+  </article>
+</div>

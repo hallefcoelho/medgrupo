@@ -1,0 +1,44 @@
+<aside class="container">
+  <figure class="container__image" (click)="openChangeTheme()">
+    <div [ngClass]="user.notifications ? 'container__image__circle' : 'container__image__circle--hidden'"></div>
+    <img [src]="user.avatar" alt="Foto de perfil">
+  </figure>
+  <nav class="container__navigation">
+    <ul>
+      <li>
+        <a routerLinkActive="container__navigation--activate" routerLink="home">
+          <mat-icon class="container__navigation__icon" svgIcon="icon-home-active" aria-label="Ícone de Casa"></mat-icon>
+          <span class="container__navigation__text" routerLinkActive="container__navigation--activate">Pra você</span>
+        </a>
+      </li>
+      <li>
+        <a routerLinkActive="container__navigation--activate" routerLink="conteudos">
+          <mat-icon class="container__navigation__icon" svgIcon="icon-play" aria-label="Ícone de Play"></mat-icon>
+          <span class="container__navigation__text" routerLinkActive="container__navigation--activate">Conteúdos</span>
+        </a>
+      </li>
+      <li>
+        <a routerLinkActive="container__navigation--activate" routerLink="mentoria">
+          <mat-icon class="container__navigation__icon" svgIcon="icon-mentoria" aria-label="Ícone de Calendário"></mat-icon>
+          <span class="container__navigation__text" routerLinkActive="container__navigation--activate">Mentoria</span>
+        </a>
+      </li>
+      <li>
+        <a routerLinkActive="container__navigation--activate" routerLink="treinamento">
+          <mat-icon class="container__navigation__icon" svgIcon="icon-treinamento" aria-label="Ícone de Treinamento"></mat-icon>
+          <span class="container__navigation__text" routerLinkActive="container__navigation--activate">Treinamento</span>
+        </a>
+      </li>
+      <li>
+        <a routerLinkActive="container__navigation--activate" routerLink="metricas">
+          <mat-icon class="container__navigation__icon" svgIcon="icon-metricas" aria-label="Ícone em formato de Gráficos em Barras"></mat-icon>
+          <span class="container__navigation__text" routerLinkActive="container__navigation--activate">Métricas</span>
+        </a>
+      </li>
+    </ul>
+  </nav>
+  <figure class="container__image" (click)="openListProduct()">
+    <mat-icon [svgIcon]="themeColor == 'dark' ? 'menu' : 'menu-light'" aria-label="Menu com o logo da empresa"></mat-icon>
+    <mat-icon class="container__image__icon__arrow" svgIcon="icon-arrow-down" aria-label="Ícone com a seta para baixo"></mat-icon>
+  </figure>
+</aside>

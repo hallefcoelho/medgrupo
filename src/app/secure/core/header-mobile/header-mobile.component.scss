@@ -1,0 +1,51 @@
+.container {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  background-color: var(--med-color-neutral-alternative-1);
+  overflow: hidden;
+  position: fixed;
+  z-index: 2;
+}
+.container__image__circle {
+  position: relative;
+  width: 10px;
+  height: 10px;
+  background-color: var(--med-color-brand-4);
+  border: 2px solid var(--med-color-brand-1);
+  border-radius: 20px;
+  left: 35px;
+  bottom: 12px;
+}
+
+.container__image__circle--hidden {
+  visibility: hidden;
+
+}
+
+.container__image {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  & > .container__image__icon__arrow {
+    width: 10px;
+    margin-left: 3px;
+  }
+  & > img {
+    height: 30px;
+    width: 30px;
+    border-radius: 30px;
+  }
+  & > mat-icon {
+    height: 30px;
+    width: 30px;
+  }
+  span {
+    font-size: 12px;
+    font-weight: 600;
+    color: var(--med-color-neutral-10);
+    margin-left: 10px;
+    width: auto;
+  }
+}

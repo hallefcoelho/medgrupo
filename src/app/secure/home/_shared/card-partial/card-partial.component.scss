@@ -1,0 +1,98 @@
+
+.container__partial{
+  margin: 30px 0 30px 0;
+}
+
+.container__partial__header--title {
+  font-size: 20px;
+  font-weight: 600;
+  color: var(--med-color-neutral-10);
+  padding: 20px 20px 0 20px;
+}
+
+.container__partial_card {
+  margin-left: 40px;
+  width: 410px;
+  height: 170px;
+  background-color: var(--med-color-neutral-alternative-1);
+  border-radius: 8px;
+  display: flex;
+  & > section > div {
+    display: flex;
+    gap: 10px;
+    margin: 20px;
+  }
+}
+.container__partial__card__hits {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.container__partial__text {
+  display: flex;
+  flex-direction: column;
+}
+
+.container__partial__text--hits {
+  & > span {
+    font-size: 16px;
+    font-weight: 600;
+    color: var(--med-color-neutral-10);
+  }
+}
+
+.container__partial__text--percent {
+  font-size: 32px;
+  font-weight: 600;
+  color: var(--med-color-neutral-10);
+}
+
+.container__partial__text--questions {
+  margin-top: 10px;
+  font-size: 12px;
+  font-weight: 400;
+  color: var(--med-color-neutral-alternative-2);
+}
+
+.container_progress-bar {
+  width: 40%;
+  margin-left: 50px;
+  transform: rotate(270deg);
+}
+
+.container_progress-bar__meter {
+  height: 10px;
+  position: relative;
+  background: var(--med-color-neutral-alternative-2);
+  overflow: hidden;
+  border-radius: 50px;
+}
+
+.container_progress-bar__meter span {
+  display: block;
+  height: 100%;
+}
+
+.progress {
+  background-color: var(--med-color-brand-4);
+  animation: progressBar 1s ease-in-out;
+  animation-fill-mode:both;
+}
+
+@keyframes progressBar {
+  0% { width: 0; }
+  100% { width: 100%; }
+}
+
+@media (max-width: 460px) {
+  .container__partial_card {
+    width: 300px;
+  }
+  .container_progress-bar {
+    margin-left: 10px;
+  }
+  .container__partial_card > section > div {
+    margin: 15px;
+  }
+}

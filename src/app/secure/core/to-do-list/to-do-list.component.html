@@ -1,0 +1,27 @@
+<div class="container">
+  <header class="container__header__title">
+    <!-- <h1 class="container__header__title">Suas tarefas de hoje</h1> -->
+    <app-title title="Suas tarefas de hoje" />
+  </header>
+  <main>
+    <ul>
+      <li *ngFor="let schedule of scheduleData; let i = index">
+        <article class="container__card">
+          <section>
+            <mat-checkbox class="container__card__checkbox" [checked]="schedule.checked" (change)="scheduleChecked(schedule, i)">
+              <div class="container__card__schedule">
+                <h2 class="container__card__schedule--title">{{schedule.title}}</h2>
+                <div class="container__card__schedule--category">
+                  <mat-icon [svgIcon]="themeColor == 'dark' ? 'icon-' + schedule.icon : 'icon-' + schedule.icon + '-light'" class="container__card__schedule--category--icon"></mat-icon>
+                  <span class="container__card__schedule--category--description">
+                    {{schedule.category}} <time>{{schedule.schedule}}</time>
+                  </span>
+                </div>
+              </div>
+            </mat-checkbox>
+          </section>
+        </article>
+      </li>
+    </ul>
+  </main>
+</div>

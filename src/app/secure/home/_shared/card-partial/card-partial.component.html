@@ -1,0 +1,41 @@
+<section class="container__partial">
+  <header>
+    <app-title title="Veja a parcial de sua semana" />
+  </header>
+  <article class="container__partial_card" *ngFor="let item of partial">
+    <section class="container__partial__card__hits">
+      <div class="container__partial__text--hits">
+        <span>Acertos</span>
+        <mat-icon class="container__card__affix__icon" svgIcon="icon-interrogacao" aria-label="Ícone de Interrogação"></mat-icon>
+      </div>
+      <div class="container__partial__text">
+        <span class="container__partial__text--percent">{{item.acertos}}</span>
+        <span class="container__partial__text--questions">{{item.questoes}} questões</span>
+      </div>
+    </section>
+
+    <section class="container_progress-bar">
+      <div class="container_progress-bar__meter">
+        <span [ngStyle]="{'width': item.weeks[0] + '%'}"><span class="progress"></span></span>
+      </div>
+      <div class="container_progress-bar__meter">
+        <span [ngStyle]="{'width': item.weeks[1] + '%'}"><span class="progress"></span></span>
+      </div>
+      <div class="container_progress-bar__meter">
+        <span [ngStyle]="{'width': item.weeks[2] + '%'}"><span class="progress"></span></span>
+      </div>
+      <div class="container_progress-bar__meter">
+        <span [ngStyle]="{'width': item.weeks[3] + '%'}"><span class="progress"></span></span>
+      </div>
+      <div class="container_progress-bar__meter">
+        <span [ngStyle]="{'width': item.weeks[4] + '%'}"><span class="progress"></span></span>
+      </div>
+      <div class="container_progress-bar__meter">
+        <span [ngStyle]="{'width': item.weeks[5] + '%'}"><span class="progress"></span></span>
+      </div>
+      <div class="container_progress-bar__meter">
+        <span [ngStyle]="{'width': item.weeks[6] + '%'}"><span class="progress"></span></span>
+      </div>
+    </section>
+  </article>
+</section>

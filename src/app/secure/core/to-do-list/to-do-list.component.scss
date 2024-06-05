@@ -1,0 +1,76 @@
+li {
+  list-style-type: none;
+  margin-left: -34px;
+}
+
+.container {
+  background-color: var(--med-color-neutral-1);
+  width: 93%;
+  height: 100%;
+  border-left: 0.5px solid var(--med-color-neutral-alternative-1);
+  padding: 0 18px 0 18px;
+  overflow-y: auto;
+}
+.container__header__title {
+  margin-left: -13px;
+}
+
+.container__card {
+  width: 100%;
+  height: 72px;
+  background-color: var(--med-color-neutral-alternative-1);
+  border-radius: 8px;
+  margin-bottom: 10px;
+  padding-bottom: 10px;
+}
+
+.container__card {
+  color: var(--med-color-neutral-10);
+}
+
+.container__card__checkbox {
+  height: 100%;
+}
+
+.container__card__schedule {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  margin-top: 8px;
+}
+
+.container__card__schedule--title {
+  font-size: 16px;
+  font-weight: 600;
+  color: var(--med-color-neutral-10);
+}
+
+.container__card__schedule--category {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  margin-top: -10px;
+}
+
+.container__card__schedule--category--description {
+  font-size: 12px;
+  font-weight: 600;
+  color: var(--med-color-neutral-alternative-3);
+  & > time {
+    font-weight: 400;
+    margin-left: 5px;
+  }
+}
+
+.container__card__schedule--category--icon{
+  width: 18px;
+  height: auto;
+}
+
+@media (max-width: 800px) {
+  .container__header__title {
+    margin-left: -20px;
+  }
+}
